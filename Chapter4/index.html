@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8"></meta>
+    <link rel="stylesheet" href="css/picture.css" media="screen">
+  </head>
+  <body>
+    <h1>Snapshots</h1>
+    <ul>
+      <li><a href="image/1.pic.jpg" title="yuanyuan1" onclick="showPic(this); return false;">yuanyuan1</a></li>
+    </ul>
+    <ul>
+      <li><a href="image/2.pic.jpg" title="yuanyuan2" onclick="showPic(this); return false;">yuanyuan2</a></li>
+    </ul>
+    <ul>
+      <li><a href="image/3.pic.jpg" title="yuanyuan3" onclick="showPic(this); return false;">yuanyuan3</a></li>
+    </ul>
+    <ul>
+      <li><a href="image/4.pic.jpg" title="yuanyuan4" onclick="showPic(this); return false;">yuanyuan4</a></li>
+    </ul>
+    <img id="placeholder" src="image/1.pic.jpg" alt="my image gallery" />
+    <p id="description"">Choose an image.</p>
+    <script>
+     function showPic(whichpic) {
+       var source = whichpic.getAttribute("href");
+       var title = whichpic.getAttribute("title");
+       var placeholder = document.getElementById("placeholder");
+       var description = document.getElementById("description");
+       placeholder.setAttribute("src", source);
+       /* description.setAttribute("")*/
+       /* alert(description.childNodes[0].nodeType)
+	* alert(document.getElementsByTagName('body')[0].nodeType)
+	* alert(description.childNodes[0].nodeValue)*/
+       description.firstChild.nodeValue = title;
+       /* alert(description.lastChild.nodeValue);*/
+     }
+
+     function countBodyChildren() {
+       var body = document.getElementsByTagName("body")[0];
+       var body_element = body.childNodes
+       /* alert(body.nodeType);
+	* alert(body_element.length);*/
+     }
+
+     window.onload = countBodyChildren
+
+     /* var tagObject = document.getElementsByTagName("p")
+
+      * for (var i = 0; i < tagObject.length; i++) {
+      *   alert(typeof(tagObject[i]));
+      * }
+
+      * var allNodeLength = document.getElementsByTagName("*").length;
+      * alert(allNodeLength);
+k
+      * var contentElement = document.getElementById("content");
+      * alert(contentElement.getElementsByTagName("*").length);*/
+     
+    </script>
+  </body>
+  
+</html>

@@ -1,0 +1,29 @@
+img {
+    height: 256px;
+    width: 192px;
+    display: block;
+    clear: both;
+}
+
+body {
+    color: #333;
+    background: #ccc;
+    margin: 1em 10%;
+}
+
+a {
+    color: #c60;
+    background-color: transparent;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    float: left;
+    padding: 1em;
+    list-style: none;
+}

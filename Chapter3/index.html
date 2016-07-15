@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8"></meta>
+  </head>
+  <body>
+    <div id="content">
+      <p>lan</p>
+      <p>zhi</p>
+      <p>heng</p>
+    </div>
+    <script>
+
+     var tagObject = document.getElementsByTagName("p")
+
+     for (var i = 0; i < tagObject.length; i++) {
+       alert(typeof(tagObject[i]));
+     }
+
+     var allNodeLength = document.getElementsByTagName("*").length;
+     alert(allNodeLength);
+
+     var contentElement = document.getElementById("content");
+     alert(contentElement.getElementsByTagName("*").length);
+     
+    </script>
+  </body>
+  
+</html>

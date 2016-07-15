@@ -1,0 +1,10 @@
+body {
+    font-family: "Hello World";
+    font-size: 12pt;
+}
+
+abbr {
+    text-decoration: underline;
+    border: 0;
+    font-style: normal;
+}

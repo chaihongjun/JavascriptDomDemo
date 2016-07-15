@@ -1,0 +1,48 @@
+body {
+
+}
+
+table {
+    margin: auto;
+    border: 1px solid #699;
+}
+
+caption {
+    margin: auto;
+    padding: .2em;
+    font-size: 1.2em;
+    font-weight: normal;
+}
+
+th {
+    font-style: italic;
+    textt-align: left;
+    border: 1px dotted #699;
+    background-color: #9cc;
+}
+
+th, td {
+    font-weight: normal;
+    width: 10em;
+    padding: .5em;
+}
+
+.intro {
+    background: #ffa;
+}
+
+.header-next {
+    fontWeight: bold;
+    fontSize: 1.2em;
+    color: red;
+}
+
+
+# css3 才支持
+/* tr:nth-child(odd) { */
+/*     background-color: #ffc; */
+/* } */
+
+/* tr:nth-child(even) { */
+/*     background-color: #fff; */
+/* } */
